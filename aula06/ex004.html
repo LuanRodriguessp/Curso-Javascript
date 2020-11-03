@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let nome = window.prompt('Qual é o seu nome?') //Salva o que foi escrito no prompt na variavel nome. 
+        document.writeln(`Ola, <strong>${nome}</strong>! . Seu nome tem ${nome.length} letras.<br/>`) //nome.length é utilizado para fazer a contagem de letras.
+        document.writeln(`Seu nome em maiusculo é ${nome.toUpperCase()}<br/>`) //o comando document.write printa na pagina o que foi escrito no prompt e o nome.toUpperCase é utilizado para deixar as letras maiusculas
+        document.writeln(`Seu nome em minusculo é ${nome.toLowerCase()}<br/>`) //nome.toLowerCase é utilizado para deixar todas as letras minusculas
+
+        //VARIAVEL.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) | converte o numero em real.
+        //.replace('valor antigo','valor novo')  | para fazer um replace, trocar palavra por outra ou numero.
+    </script>
+</body>
+</html>
+

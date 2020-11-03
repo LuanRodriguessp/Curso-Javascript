@@ -1,0 +1,50 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+   
+    body 
+    {
+        color: grey;
+        background-color: black;
+        font: normal 15pt Arial
+    }
+    
+</style>
+<body>
+
+   <h1>N-MULTIFIBRA</h1> 
+
+   <p id = "ok">Hello, World !</p>
+   <p><strong>Dom é Modelo de objetos para documentos. É um conjunto de objetos dentro do seu navegador que da acesso aos documentos internos do seu site.</strong></p>
+   <div id = "msg"> DOM !</div>
+    
+
+<script>
+    
+
+    let p1 = window.document.getElementsByTagName('p')[0] // o Comando getElementsByTagName('p')[0] >>> O comando puxa um paragrafo do body ('p') e você escolhe qual paragrafo con [0], o primeiro sempre começa com 0.
+    //para selecionar uma parte do HTML por 'MARCA' getElementsByTahName('')
+    //por 'ID' getElementById('')
+    //por 'NOME' getElementsByName('')
+    //por 'CLASSE' getElementsByClassName ('')
+    //por 'SELETOR' getElementsBySelector ('')
+    p1.style.color = 'grey' // pega a variavel p1, que é o paragrafo salvo e muda a cor para o Azul
+    document.write() // variavel.innerHTML == ele printa o paragrafo do jeito que ele esta (com edições).  variavel.innertext == printa somente o texto do paragro, sem edições.
+    let d1 = window.document.getElementById('ok') // cria uma variavel com o conteudo que esta com o "id = msg" no html.
+    d1.style.background = 'White' // muda a cor de fundo do texto que esta na variavel 'd'!
+    d1.innerText = 'DOM : Document Object Model' 
+
+    let d2 = window.document.querySelector ('div#msg') // para id usar (#). para class usar (.)
+    d2.style.background = 'White'
+
+</script>
+</body>
+</html>
