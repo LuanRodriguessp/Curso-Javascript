@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+ 
+    <h1>Sistema de multas</h1>
+    Qual é a sua velocidade? <input type="number" name="txtvel" id="txtvel"> <!--Cria um input perguntando qual é a velocidade-->
+    <input type="button" value="verificar" onclick="Calcular()"> <!--Cria um botão com o nome verificar que executa a 'function = Calcula'-->
+    <div id='res'> <!--Div em branco com id, para colocarmos os valores com a function-->
+
+    
+    </div>
+
+    <Script>
+        function Calcular (){  //cria a função Calcula  
+
+            let txtv = window.document.querySelector('input#txtvel') //  pega o valor digitado no input com o id=txtvel e salva na variavel txtv.
+            let res = window.document.querySelector('div#res') // pega o valor da div
+            let vel = Number(txtv.value) // converte a variavel txtv em numero e salva na variavel vel.
+
+            res.innerHTML = `Sua velocidade é <strong>${vel}</strong>`  // printa onde esta a div no Html a msg
+            if (vel > 60) {  // se a velocidade for maior que 60 ele executa o res.innerHTML que printa na div 'Voce esta MUlTADO'
+                res.innerHTML += '<p><strong>Você esta MULTADO !!</strong></p>'
+            }
+            else if (vel < 60) { // se a velocidade for menor que 60 ele executa o res.innerHTML que printa na div 'Parabens, você não...'
+                res.innerHTML += '<p><strong>Parabés, você não foi multado.</strong></p>'
+            }
+                res.innerHTML += 'Dirija sempre com o sinto de segunça'
+                       
+        }
+    </Script>
+    
+
+</body>
+</html>
