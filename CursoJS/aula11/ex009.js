@@ -6,3 +6,4 @@ if (pais == 'EUA') {      // se o pais for igual a EUA, ele vai printar a msg do
 else {  // se não, printa a msg do console log abaixo de else.
     console.log('Brasileiro')
 }
+////TESTE
